@@ -1,0 +1,28 @@
+<meta charset = "UTF-8">
+<h3>Valores:</h3>
+
+<p>Quanto é a distância percorrida?</p> 
+<input type="" id="input1"</p>
+<br>
+<p>Quanto seu carro fez por litro?</p> 
+<input type="" id="input3">
+<br>
+<p>Qual o preço do combustível?</p> 
+<input type="" id="input2">
+<button onclick="resultado()">Vai</button>
+
+<br>
+<script type="text/javascript">
+    function resultado() {
+        var distanciaPercorrida = document.getElementById('input1').value;
+        var quantidadeGasta = document.getElementById('input3').value;
+        var preco = document.getElementById('input2').value;
+
+        var resposta=(preco*distanciaPercorrida) / quantidadeGasta;
+
+        alert(" Você utilizou " + resposta.toPrecision(3) + "$ por Km");
+
+        input1.value ="";
+        input3.value ="";
+    }
+</script>
